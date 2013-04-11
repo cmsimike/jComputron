@@ -17,5 +17,28 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <configuration>
+                    <mainClass>com.xekm.jcomputron.App</mainClass>
+                    <arguments>
+                        <argument>argument1</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
+
+    <name>jComputron</name>
+    <url>https://github.com/cmsimike/jComputron</url>
+    <description>An 8 bit cpu with a 16 bit instruction set</description>
+    <organization>
+        <name>Xekm</name>
+        <url>http://xekm.com</url>
+    </organization>
 </project>
